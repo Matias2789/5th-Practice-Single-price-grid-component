@@ -1,0 +1,134 @@
+/* !Fuentes de texto y configuracion general */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* ?font-family: 'Karla', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* !Empezando con First Movil 375px */
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+.card_container {
+    margin: 70px 25px 70px 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+}
+/* ?Editando las cards */
+/* *Editando card principal */
+.card_principal {
+    background-color: #fff;
+    height: 255px;
+    padding: 25px;
+    font-size: 1em;
+}
+h3 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.325em;
+}
+.subtitulo {
+    color: hsl(71, 73%, 54%);
+    font-size: 1em;
+    font-weight: 700;
+}
+p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.8;
+    font-size: 0.9em;
+}
+/* *Editando card Secundario "Price" */
+.price {
+    background-color: hsl(179, 62%, 43%);
+    padding: 25px;
+    height: 220px;
+}
+.price h3 {
+    color: #fff;
+    font-size: 1.175em;
+}
+.price b {
+    font-weight: 700;
+    font-size: 2.35em;
+}
+.price u {
+    padding-left: 10px;
+    opacity: .5;
+    text-decoration: none;
+}
+.price p {
+    color: #fff;
+    padding-bottom: 25px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Karla', sans-serif;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-weight: 700;
+    font-size: .9sem;
+}
+/* *Editando card Secundario "Benefits" */
+.benefits {
+    background-color: hsl(179, 75%, 45%);
+    padding: 25px;
+    height: 220px;
+}
+.benefits h3 {
+    color: #fff;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+.benefits p {
+    color: #fff;
+    line-height: 1.3;
+    opacity: .75;
+}
+/* !Empezando con First Desktop 1440 */
+@media screen and (min-width: 1000px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_container {
+        margin: 0;
+        width: 600px;
+    }
+    .card_principal {
+        height: 200px;
+        padding: 40px;
+    }
+    .card_secundary {
+        display: flex;
+        height: 255px;
+    }
+    .price {
+        width: 50%;
+        height: auto;
+        padding: 40px;
+        padding-right: 30px;
+    }
+    .price h3 {
+        font-size: 1em;
+    }
+    .price p {
+        padding-bottom: 32px;
+    }
+    .price b {
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .benefits {
+        height: auto;
+        width: 50%;
+        padding: 40px;
+    }
+}
